@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/addUser}" th:object="${ldapUser}" method="post">
+    <label for="cn">cn</label>
+    <input type="text" name="cn" id="cn">
+    <label for="sn">sn</label>
+    <input type="text" name="sn" id="sn">
+    <label for="username">username</label>
+    <input type="text" name="username" id="username">
+    <label for="password">password</label>
+    <input type="text" name="password" id="password">
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
